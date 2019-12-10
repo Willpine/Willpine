@@ -1,0 +1,37 @@
+.gallery{
+    list-style-type: none;
+    height:100%;
+    overflow: hidden;
+}
+
+.gallery li{
+    float: left;
+    height: 800px;
+    width: 800px;
+    background-size: 100%;
+}
+
+.gallery li:nth-child(1){
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-image:url('drawings/World 1.png');
+}
+.gallery li:nth-child(2){
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-image:url('drawings/World 1.png');
+}
+.gallery li:nth-child(3){
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-image:url('drawings/World 1.png');
+}
+.gallery li:nth-child(4){
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-image:url('drawings/World 1.png');
+}
