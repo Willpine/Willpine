@@ -1,37 +1,41 @@
-.gallery{
-    list-style-type: none;
-    height:100%;
-    overflow: hidden;
+/*As imagens estão a 4px de distância uma da outra*/
+
+.Título{
+    background-color: brown;
 }
 
-.gallery li{
-    float: left;
-    height: 800px;
+.Título h1{
+    text-align: center;
+}
+
+.images{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 800px;
-    background-size: 100%;
+    height: 1500px;
+    background-color: blueviolet;
 }
 
-.gallery li:nth-child(1){
-    float: left;
-    height: 200px;
-    width: 200px;
-    background-image:url('drawings/World 1.png');
+.inDiv img{
+    width:200px;
+    height:200px;
+    background-size: 100%;
+    transition: 0.3s;
 }
-.gallery li:nth-child(2){
-    float: left;
-    height: 200px;
-    width: 200px;
-    background-image:url('drawings/World 1.png');
+
+.inDiv img:hover{
+  -webkit-transform: scale3D(1.4,1.4,1.4);
+  -moz-transform: scale3D(1.4,1.4,1.4);
+  transform: scale3D(1.4,1.4,1.4);
 }
-.gallery li:nth-child(3){
-    float: left;
-    height: 200px;
-    width: 200px;
-    background-image:url('drawings/World 1.png');
-}
-.gallery li:nth-child(4){
-    float: left;
-    height: 200px;
-    width: 200px;
-    background-image:url('drawings/World 1.png');
+
+.inDiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 608px;
+    height: 1500px;
+    background-color: darkorange;
 }
