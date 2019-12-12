@@ -4,49 +4,90 @@
 <head>
     <title>Willpine - Gallery</title>
     <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link href="resources/lightbox2-2.11.1/src/css/lightbox.css" rel="stylesheet" />
 </head>
 
 <body>
     <script>
-        function lb(idx) {
-            //Show the slider wrapper
-            var ninjaSldr = document.getElementById("ninja-slider");
-            ninjaSldr.parentNode.style.display = "block";
+        lightbox.option({
 
-            //Then init the slider
-            //Note: The { initSliderByCallingInitFunc: true } option in the 
-            // ninja-slider.js tells the page not to initiate the slider
-            // unless the following init(idx) function is called.
-            nslider.init(idx);
-
-            //Then mimic clicking the fullscreen button to popup the modal
-            var fsBtn = document.getElementById("fsBtn");
-            fsBtn.click();
-        }
-
-        function fsIconClick(isFullscreen, ninjaSldr) {
-            //Note: fsIconClick is the default event handler of the fullscreen button
-            if (isFullscreen) {
-                ninjaSldr.parentNode.style.display = "none";
-            }
-        }
+        })
     </script>
-
+    <!--Título da página-->
     <div class="Título">
         <h1>Gallery</h1>
     </div>
-
+    <!--Imagens-->
     <div class="images">
         <div class="inDiv">
-            <img src="drawings/World 1Thumb.png" onclick="lb(0)">
-            <img src="drawings/HeirThumb.png" onclick="lb(1)">
-            <img src="drawings/World 1Thumb.png" onclick="lb(2)">
+            <a href="drawings/World 1.png" data-lightbox="image-1" data-title="World 1">
+                <img src="drawings/World 1Thumb.png"></a>
+            <a href="drawings/Heir.png" data-lightbox="image-1" data-title="Heir">
+                <img src="drawings/HeirThumb.png"></a>
+            <a href="drawings/Agony.png" data-lightbox="image-1" data-title="Agony">
+                <img src="drawings/AgonyThumb.png"></a>
+            <a href="drawings/BattlePosition.png" data-lightbox="image-1" data-title="Battle Position">
+                <img src="drawings/BattlePositionThumb.png"></a>
             </br>
-            <img src="drawings/World 1Thumb.png" onclick="lb(3)">
-            <img src="drawings/World 1Thumb.png" onclick="lb(4)">
-            <img src="drawings/World 1Thumb.png" onclick="lb(5)">
+
+            <a href="drawings/Happy new year.png" data-lightbox="image-1" data-title="Happy new year">
+                <img src="drawings/Happy new yearThumb.png"></a>
+            <a href="drawings/Ocean Eyes.png" data-lightbox="image-1" data-title="Ocean Eyes">
+                <img src="drawings/Ocean EyesThumb.png"></a>
+                <a href="drawings/Samurai.png" data-lightbox="image-1" data-title="Samurai">
+                    <img src="drawings/SamuraiThumb.png"></a>
+                <a href="drawings/Smile like you mean it.png" data-lightbox="image-1" data-title="Smile like you mean it">
+                    <img src="drawings/Smile like you mean itThumb.png"></a>
+            </br>
+            
+            <a href="drawings/Stranded Jeremy.png" data-lightbox="image-1" data-title="Stranded Jeremy">
+                <img src="drawings/Stranded JeremyThumb.png"></a>
+
+            
+            <a href="drawings/Anna Sleeping.png" data-lightbox="image-1" data-title="Anna Awakens">
+                <img src="drawings/Anna SleepingThumb.png"></a>
+            <a href="drawings/Anna.png" data-lightbox="image-1" data-title="Anna">
+                <img src="drawings/AnnaThumb.png"></a>
+            <a href="drawings/Auto Pilot.png" data-lightbox="image-1" data-title="Auto Pilot">
+                <img src="drawings/Auto PilotThumb.png"></a>
+
+            </br>
+            <a href="drawings/Transplarent.png" data-lightbox="image-1" data-title="Transplarent">
+                <img src="drawings/TransplarentThumb.png"></a>
+            <a href="drawings/White_Runner.png" data-lightbox="image-1" data-title="White_Runner">
+                <img src="drawings/White_RunnerThumb.png"></a>
+            <a href="drawings/GFace.png" data-lightbox="image-1" data-title="GFace">
+                <img src="drawings/GFaceThumb.png"></a>
+
+            
+            <a href="drawings/BokunoWallpaper.png" data-lightbox="image-1" data-title="BokunoWallpaper">
+                <img src="drawings/BokunoWallpaperThumb.png"></a>
+            </br>
+            <a href="drawings/Buttons.png" data-lightbox="image-1" data-title="Buttons">
+                <img src="drawings/ButtonsThumb.png"></a>
+            <a href="drawings/Dropping rose.png" data-lightbox="image-1" data-title="Dropping rose">
+                <img src="drawings/Dropping roseThumb.png"></a>
+
+            
+            <a href="drawings/Jetpack.png" data-lightbox="image-1" data-title=Jetpack">
+                <img src="drawings/JetpackThumb.png"></a>
+            <a href="drawings/Sora.png" data-lightbox="image-1" data-title="Sora">
+                <img src="drawings/SoraThumb.png"></a>
+            </br>
+            <a href="drawings/Hers01.png" data-lightbox="image-1" data-title="Hers01">
+                <img src="drawings/Hers01Thumb.png"></a>
+
+            
+            <a href="drawings/Cyberpunk revolution.png" data-lightbox="image-1" data-title="Cyberpunk revolution">
+                <img src="drawings/Cyberpunk revolutionThumb.png"></a>
+            <a href="drawings/Wiu.png" data-lightbox="image-1" data-title="Wiu">
+                <img src="drawings/WiuThumb.png"></a>
+            <a href="drawings/Lollita.png" data-lightbox="image-1" data-title="Lollita">
+                <img src="drawings/LollitaThumb.png"></a>
         </div>
     </div>
+
+    <script src="resources/lightbox2-2.11.1/dist/js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
