@@ -1,25 +1,25 @@
 /*As imagens estão a 4px de distância uma da outra*/
 
-.Título{
-    padding: 10px;
+html{
+    scroll-behavior: smooth
+}
+
+.TítuloG{
+    padding: 1px;
     background-color: rgb(73, 52, 97);
 }
 
-.Título h1{
+.TítuloG h1{
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     color: white;
 }
 
 .images{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 829px;
+    
     height: 822px;
-    overflow: scroll;
-    overflow-x:hidden ;
-    /*background-color: blueviolet;*/
+    overflow: hidden;
+    background-color: blueviolet;
 }
 
 .inDiv img{
@@ -35,6 +35,14 @@
   transform: scale3D(1.4,1.4,1.4);
 }
 
-.inDiv{
-   /* background-color: darkorange;*/
+.images .inDiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 829px;
+    height: 822px;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: white;
 }
+

@@ -1,0 +1,9 @@
+.divAbout h1{
+    text-align: center;
+}
+
+.divAbout{
+    height: 930px;
+    overflow: hidden;
+    background-color: blueviolet;
+}
