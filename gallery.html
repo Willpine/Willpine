@@ -3,6 +3,7 @@
 
 <head>
     <title>Willpine - Gallery</title>
+    <link href="home.css" rel="stylesheet">
     <link href="gallery.css" rel="stylesheet">
     <link href="writtings.css" rel="stylesheet" />
     <link href="about.css" rel="stylesheet" />
@@ -11,12 +12,44 @@
 
 <body>
     <!--Navigation bar-->
-    <div id="navbar">
-        <a class="active" href="index.html">Home</a>
+    <div id="navbar" class="sticky">
+        <a href=#homeSection>Home</a>
         <a href="#gallerySection">Gallery</a>
         <a href="#writtingsSection">Writtings</a>
         <a href="#aboutSection">About</a>
     </div>
+
+    <section id="homeSection">
+        <i>
+            <h1 class="titleName">Will Pine</h1>
+        </i>
+
+        <h3 class="intro">Introduction goes here</h3>
+
+        <section class="containerHome flexHome">
+            <a href=#gallerySection>
+                <div class="itemHome">
+                    <h3>Gallery</h3>
+                    <p>Some of the stuff</br> I'm kinda proud of</p>
+                </div>
+            </a>
+            <a href=#writtingsSection>
+                <div class="itemHome">
+                    <h3>Writtings</h3>
+                    <p>Story sketches, plans, thoughts, future projects,
+                        it is all here.</p>
+                </div>
+            </a>
+            <a href=#aboutSection>
+                <div class="itemHome">
+                    <h3>About</h3>
+                    <p>19 years aren't that much, but enough for an about me-section
+                        to exist.
+                    </p>
+                </div>
+            </a>
+        </section>
+    </section>
     <!--The gallery Section-->
     <section id="gallerySection" class="galleryClass">
         <!--Título da página-->
@@ -105,10 +138,10 @@
             </div>
 
             <section class="container flex">
-                    <div class="item">Lovecraft Maybe</div>
-                    <div class="item">Gurren Lagann Maybe</div>
-                    <div class="item">Drawing Maybe</div>
-                </section>
+                <div class="item">Lovecraft Maybe</div>
+                <div class="item">Gurren Lagann Maybe</div>
+                <div class="item">Drawing Maybe</div>
+            </section>
 
         </div>
     </section>
@@ -125,7 +158,7 @@
     </section>
 
     <script src="resources/lightbox2-2.11.1/dist/js/lightbox-plus-jquery.js"></script>
-    <script>
+    <!--<script>
         window.onscroll = function () { myFunction() };
 
         var navbar = document.getElementById("navbar");
@@ -138,7 +171,7 @@
                 navbar.classList.remove("sticky");
             }
         }
-    </script>
+    </script>-->
 </body>
 
 </html>

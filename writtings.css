@@ -1,41 +1,46 @@
 #divWrittingsId {
     background-color: crimson;
-    height:1080
+    height: 1080
 }
 
-.TítuloW{
+.TítuloW {
     padding: 10px;
-    background-color: rgb(199, 199, 199);
+    /* background-color: rgb(199, 199, 199);*/
 }
 
-.TítuloW h1{
+.TítuloW h1 {
     text-align: center;
-    color: rgb(75, 75, 75)
+    font-size: 40px;
+    /*color: rgb(75, 75, 75)*/
 }
 
 .flex {
-	display: flex;
+    display: flex;
 }
 
+
 /* Flex Item */
+
 .item {
     width: 400px;
     height: 300px;
-	margin: 5px;
-	background: crimson;
-	text-align: center;
+    margin: 5px;
+    background: crimson;
+    text-align: center;
     font-size: 1.5em;
     transition: 0.2s;
 }
-.item:hover{
-    -webkit-transform: scale3D(1.4,1.4,1.4);
-    -moz-transform: scale3D(1.4,1.4,1.4);
-    transform: scale3D(1.4,1.4,1.4);
-}
-.container {
-    height: 860px;
-    width: 800px;
-    margin-right: auto;
-	margin-left: auto;
 
+.item:hover {
+    -webkit-transform: scale3D(1.4, 1.4, 1.4);
+    -moz-transform: scale3D(1.4, 1.4, 1.4);
+    transform: scale3D(1.4, 1.4, 1.4);
+}
+
+.container {
+    height: 960px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    /*background-color: aqua;*/
 }
