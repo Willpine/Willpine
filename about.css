@@ -1,8 +1,9 @@
-.divAbout h1{
+.divAbout h1 {
     text-align: center;
+    font-size: 40px;
 }
 
-.divAbout{
+.divAbout {
     display: block;
     height: 930px;
     overflow: hidden;

@@ -1,0 +1,46 @@
+/*As imagens estão a 4px de distância uma da outra*/
+
+html {
+    scroll-behavior: smooth
+}
+
+.TítuloG {
+    padding: 1px;
+    /*background-color: rgb(73, 52, 97);*/
+}
+
+.TítuloG h1 {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    /*color: white;*/
+}
+
+.images {
+    height: 950px;
+    overflow: hidden;
+    /*background-color: blueviolet;*/
+    width: 100%;
+}
+
+.inDiv img {
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    transition: 0.3s;
+}
+
+.inDiv img:hover {
+    -webkit-transform: scale(1.4, 1.4);
+    -moz-transform: scale(1.4, 1.4);
+    transform: scale(1.4, 1.4);
+}
+
+.images .inDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 829px;
+    height: 822px;
+    overflow-x: hidden;
+    background-color: orange;
+}
