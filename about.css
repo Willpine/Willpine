@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .divAbout h1 {
     text-align: center;
     font-size: 40px;
@@ -8,4 +9,16 @@
     height: 930px;
     overflow: hidden;
     /*background-color: blueviolet;*/
+=======
+.divAbout h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.divAbout {
+    display: block;
+    height: 930px;
+    overflow: hidden;
+    /*background-color: blueviolet;*/
+>>>>>>> 39b2d04025ef3d555127191df512dd56e8fac3e0
 }

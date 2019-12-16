@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -89,4 +90,95 @@ body {
     width: 100%;
     margin-right: auto;
     background-color: blue;
+=======
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    margin: 0;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    float: left;
+    width: 350px;
+}
+
+#navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.titleName {
+    text-align: center;
+    font-size: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro {
+    text-align: center;
+    padding: 30px;
+    background-color: #4CAF50;
+}
+
+.flexHome {
+    display: flex;
+}
+
+
+/* Flex Item */
+
+.itemHome {
+    width: 400px;
+    height: 400x;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    transition: 0.2s;
+    float: left;
+    background-image: url("drawings/World 1.png");
+}
+
+.itemHome:hover {
+    -webkit-transform: scale3D(1.4, 1.4, 1.4);
+    -moz-transform: scale3D(1.4, 1.4, 1.4);
+    transform: scale3D(1.4, 1.4, 1.4);
+}
+
+.containerHome {
+    height: 790px;
+    width: 100%;
+    margin-right: auto;
+    background-color: blue;
+>>>>>>> 39b2d04025ef3d555127191df512dd56e8fac3e0
 }
