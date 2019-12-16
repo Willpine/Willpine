@@ -18,14 +18,18 @@ html {
 
 .images {
     height: 950px;
+    max-height: 950px;
     overflow: hidden;
-    /*background-color: blueviolet;*/
-    width: 100%;
+    background-color: blueviolet;
+    width: auto;
 }
 
 .inDiv img {
-    width: 200px;
-    height: 200px;
+    width: auto;
+    position: relative;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
     background-size: 100%;
     transition: 0.3s;
 }
@@ -37,10 +41,25 @@ html {
 }
 
 .images .inDiv {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 829px;
-    height: 822px;
-    overflow-x: hidden;
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    max-height: 800px;
+    overflow-x:hidden;
     background-color: orange;
+}
+
+.inDiv {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+  .grid-image {
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
 }
