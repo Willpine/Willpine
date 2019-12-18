@@ -4,10 +4,7 @@ html {
     scroll-behavior: smooth
 }
 
-.TítuloG {
-    padding: 1px;
-    /*background-color: rgb(73, 52, 97);*/
-}
+/*.TítuloG*/
 
 .TítuloG h1 {
     display: block;
@@ -20,7 +17,8 @@ html {
     height: 950px;
     max-height: 950px;
     overflow: hidden;
-    width: auto;
+    width: auto;background-image: url("drawings/Happy\ new\ year.png");
+    
 }
 
 .inDiv img {

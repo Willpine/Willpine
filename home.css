@@ -13,13 +13,31 @@ body {
     margin: 0;
 }
 
-
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 #navbar {
     overflow: hidden;
     background-color: black;
     float: left;
-    width: 350px;
+    width: 327px;
     z-index:1;
 }
 
@@ -63,12 +81,15 @@ body {
 }
 
 
+.homeContainer{
+    padding: 10px;
+}
 
 .homeContainer2{
-    position: relative;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    height:700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*grid-template-columns: auto auto auto;*/
     max-width: 100%;
     padding: 30px;
 }
@@ -88,12 +109,16 @@ body {
 .child1,.child2,.child3{
     position: relative;
     height:650px;
-    max-height: 650px;
-    max-width: 600px;
+    max-width: 550px;
     background-size: 100%;
     transition: 0.6s;background-size: 100%;
     background-repeat: no-repeat;
-    margin: 7px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-basis: 100%;
 }
 
 .child1{
@@ -126,4 +151,14 @@ body {
 
 .link p{
     font-size: 60px;
+}
+
+.child1 p{
+    color: #4CAF50;
+}
+.child2 p{
+    color: rgb(255, 255, 255);
+}
+.child3 p{
+    color: rgb(122, 76, 175);
 }

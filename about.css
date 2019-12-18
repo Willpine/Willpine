@@ -1,4 +1,4 @@
-.divAbout h1 {
+.TítuloA h1 {
     text-align: center;
     font-size: 40px;
 }
@@ -7,5 +7,7 @@
     display: block;
     height: 930px;
     overflow: hidden;
-    /*background-color: blueviolet;*/
+    background-color: rgb(143, 143, 143);
+    background-image: url("drawings/Wiu.png");
+    background-repeat: no-repeat;
 }
