@@ -1,246 +1,181 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Home</title>
-    <style>
-    @import "https://fonts.googleapis.com/css?family=Open+Sans";
-
-html {
-  height: 100%;
-}
-body {
-  background: #181818;
-  color: #F0F3F4;
-  font: normal 16px/1.25 'Open Sans';
-  min-height: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-}
-.container {
-  height: 100%;
-}
-.gallery {
-  list-style-type: none;
-  height: 100%;
-  overflow: visible;
-}
-.gallery li {
-  float: left;
-  height: 100%;
-  width: 610px;
-  background: #2E4053;
-}
-.gallery .flip {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-
-  -webkit-perspective: 2000px;
-  -moz-perspective: 2000px;
-  perspective: 2000px;
-}
-.gallery li:hover .front-side {
-  opacity: 0;
-  -webkit-transform: scale3D(2,2,2);
-  -moz-transform: scale3D(2,2,2);
-  transform: scale3D(2,2,2);
-}
-.gallery li:hover .back-side {
-  background: #000;
-  opacity: 1;
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-.gallery .front-side,
-.gallery .back-side {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility:  hidden;
-  -moz-backface-visibility:  hidden;
-  backface-visibility:  hidden;
-
-  -webkit-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
-  -moz-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
-  transition: transform 0.4s ease-out, opacity 0.3s ease-out;
-}
-.gallery .front-side {
-  opacity: 1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-.gallery .back-side {
-  opacity: 0;
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-.gallery .back-side > a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.gallery li:nth-child(1) .front-side {
-  background-image:url('drawings/World 1.png');
-}
-.gallery li:nth-child(1) .text h3 {
-  color: #F39C12;
-}
-.gallery li:nth-child(1) .text h3:after {
-  background: #F5B041;
-}
-
-.gallery li:nth-child(2) .front-side {
-  background-image: url('drawings/Heir.png');
-}
-
-.gallery li:nth-child(3) .front-side {
-  background-image: url('drawings/BroChat.png');
-}
-.gallery li:nth-child(3) .text h3 {
-  color: #424949;
-}
-.gallery li:nth-child(3) .text h3:after {
-  background: #515A5A;
-}
-
-.gallery .content {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  transform: translateY(-50%);
-  padding: 25px 20px;
-}
-
-.gallery li:hover .text {
-  opacity: 1;
-  visibility: visible;
-  max-height: 2000px;
-}
-
-.gallery .text {
-  opacity: 0;
-  visibility: hidden;
-  max-height: 0;
-}
-.gallery .content h3 {
-  position: relative;
-  color: #3498DB;
-  font: normal 30px/1.25 'Open Sans';
-  margin-bottom: 25px;
-}
-.gallery .content h3:after {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 3px;
-  bottom: -10px;
-  left: 50%;
-  margin-left: -25px;
-  background: #85C1E9;
-}
-.gallery .content p {
-  margin: 10px 0;
-  color: #D6DBDF;
-  font: normal 16px/1.25 'Open Sans';
-}
-
-
-
-
-@-webkit-keyframes hide {
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-@-moz-keyframes hide {
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-@keyframes hide {
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-
-    </style>
-    
+    <title>Willpine - Gallery</title>
+    <link href="home.css" rel="stylesheet">
+    <link href="gallery.css" rel="stylesheet">
+    <link href="writtings.css" rel="stylesheet" />
+    <link href="about.css" rel="stylesheet" />
+    <link href="resources/lightbox2-2.11.1/src/css/lightbox.css" rel="stylesheet" />
 </head>
-<body>
 
-    <div class="container">
-        <ul class="gallery">
-          <li>
-            <div class="flip">
-              <div class="front-side"></div>
-              <div class="back-side">
-                <a href="gallery.html#aboutSection">
-                  <div class="content">
-                    <div class="text">
-                      <h3>About</h3>
-                      </div>
-                  </div>
-                </a>
-              </div>
+<body>
+    <!--Navigation bar-->
+    <div id="navbar" class="sticky">
+        <a href=#homeSection>Home</a>
+        <a href="#gallerySection">Gallery</a>
+        <a href="#writtingsSection">Writtings</a>
+        <a href="#aboutSection">About</a>
+    </div>
+
+    <section id="homeSection">
+        <header>
+            <i>
+                <h1 class="titleName">Will Pine</h1>
+            </i>
+
+            <h3 class="intro">Introduction goes here</h3>
+        </header>
+        <div class="homeContainer">
+            <div class="homeContainer2">
+
+                <div class="child1">
+                    <a href=#gallerySection class="child1">
+                        <div class="link">
+                            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                            <p>Gallery</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="child2">
+                    <a href=#writtingsSection class="child1">
+                        <div class="link">
+                            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                            <p>Writtings</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="child3">
+                    <a href=#aboutSection class="child1">
+                        <div class="link">
+                            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                            <p>About</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </li>
-          <li>
-            <div class="flip">
-              <div class="front-side"></div>
-              <div class="back-side">
-                <a href="gallery.html#gallerySection">
-                  <div class="content">
-                    <div class="loader"></div>
-                    <div class="text">
-                      <h3>Gallery</h3>
-                      </div>
-                  </div>
-                </a>
-              </div>
+        </div>
+    </section>
+    <!--The gallery Section-->
+    <section id="gallerySection" class="galleryClass">
+        <!--Título da página-->
+        <div class="TítuloG">
+            <h1>Gallery</h1>
+        </div>
+
+        <!--Imagens-->
+        <div class="images">
+            <div class="inDiv">
+                <a href="drawings/World 1.png" data-lightbox="image-1" data-title="World 1">
+                    <img src="drawings/World 1Thumb.png"></a>
+                <a href="drawings/Heir.png" data-lightbox="image-1" data-title="Heir">
+                    <img src="drawings/HeirThumb.png"></a>
+                <a href="drawings/Agony.png" data-lightbox="image-1" data-title="Agony">
+                    <img src="drawings/AgonyThumb.png"></a>
+                <a href="drawings/BattlePosition.png" data-lightbox="image-1" data-title="Battle Position">
+                    <img src="drawings/BattlePositionThumb.png"></a>
+
+                <a href="drawings/Happy new year.png" data-lightbox="image-1" data-title="Happy new year">
+                    <img src="drawings/Happy new yearThumb.png"></a>
+                <a href="drawings/Ocean Eyes.png" data-lightbox="image-1" data-title="Ocean Eyes">
+                    <img src="drawings/Ocean EyesThumb.png"></a>
+                <a href="drawings/Samurai.png" data-lightbox="image-1" data-title="Samurai">
+                    <img src="drawings/SamuraiThumb.png"></a>
+                <a href="drawings/Smile like you mean it.png" data-lightbox="image-1"
+                    data-title="Smile like you mean it">
+                    <img src="drawings/Smile like you mean itThumb.png"></a>
+
+                <a href="drawings/Stranded Jeremy.png" data-lightbox="image-1" data-title="Stranded Jeremy">
+                    <img src="drawings/Stranded JeremyThumb.png"></a>
+
+
+                <a href="drawings/Anna Sleeping.png" data-lightbox="image-1" data-title="Anna Awakens">
+                    <img src="drawings/Anna SleepingThumb.png"></a>
+                <a href="drawings/Anna.png" data-lightbox="image-1" data-title="Anna">
+                    <img src="drawings/AnnaThumb.png"></a>
+                <a href="drawings/Auto Pilot.png" data-lightbox="image-1" data-title="Auto Pilot">
+                    <img src="drawings/Auto PilotThumb.png"></a>
+                <a href="drawings/Transplarent.png" data-lightbox="image-1" data-title="Transplarent">
+                    <img src="drawings/TransplarentThumb.png"></a>
+                <a href="drawings/White_Runner.png" data-lightbox="image-1" data-title="White_Runner">
+                    <img src="drawings/White_RunnerThumb.png"></a>
+                <a href="drawings/GFace.png" data-lightbox="image-1" data-title="GFace">
+                    <img src="drawings/GFaceThumb.png"></a>
+
+
+                <a href="drawings/BokunoWallpaper.png" data-lightbox="image-1" data-title="BokunoWallpaper">
+                    <img src="drawings/BokunoWallpaperThumb.png"></a>
+                <a href="drawings/Buttons.png" data-lightbox="image-1" data-title="Buttons">
+                    <img src="drawings/ButtonsThumb.png"></a>
+                <a href="drawings/Dropping rose.png" data-lightbox="image-1" data-title="Dropping rose">
+                    <img src="drawings/Dropping roseThumb.png"></a>
+
+
+                <a href="drawings/Jetpack.png" data-lightbox="image-1" data-title=Jetpack">
+                    <img src="drawings/JetpackThumb.png"></a>
+                <a href="drawings/Sora.png" data-lightbox="image-1" data-title="Sora">
+                    <img src="drawings/SoraThumb.png"></a>
+                <a href="drawings/Hers01.png" data-lightbox="image-1" data-title="Hers01">
+                    <img src="drawings/Hers01Thumb.png"></a>
+
+
+                <a href="drawings/Cyberpunk revolution.png" data-lightbox="image-1" data-title="Cyberpunk revolution">
+                    <img src="drawings/Cyberpunk revolutionThumb.png"></a>
+                <a href="drawings/Wiu.png" data-lightbox="image-1" data-title="Wiu">
+                    <img src="drawings/WiuThumb.png"></a>
+                <a href="drawings/Lollita.png" data-lightbox="image-1" data-title="Lollita">
+                    <img src="drawings/LollitaThumb.png"></a>
             </div>
-          </li>
-          <li>
-            <div class="flip">
-              <div class="front-side"></div>
-              <div class="back-side">
-                <a href="gallery.html#writtingsSection">
-                  <div class="content">
-                    <div class="loader"></div>
-                    <div class="text">
-                      <h3>Writings</h3>
-                      </div>
-                  </div>
-                </a>
-              </div>
+        </div>
+    </section>
+    <!--The Writtings Section-->
+    <section id="writtingsSection">
+
+        <div class="divWrittings">
+
+            <div class="TítuloW">
+                <h1>Writtings</h1>
             </div>
-          </li>
-        </ul>
-      </div>
+
+            <div class="containerWrittings">
+
+                <div class="item">Lovecraft Maybe</div>
+                <div class="item">Gurren Lagann Maybe</div>
+                <div class="item">Drawing Maybe</div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--The about me Section-->
+    <section id="aboutSection">
+
+
+        <div class="TítuloA">
+            <h1>About</h1>
+        </div>
+        <div class="divAbout" id="divAboutId">
+
+        </div>
+    </section>
+
+    <script src="resources/lightbox2-2.11.1/dist/js/lightbox-plus-jquery.js"></script>
+    <!--<script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>-->
 </body>
+
 </html>
