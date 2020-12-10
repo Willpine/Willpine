@@ -9,8 +9,11 @@
     overflow-x: hidden;
 }
 
-body {
+html,body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkred;
 }
 
 /* width */
@@ -67,7 +70,7 @@ body {
 }
 
 .titleName {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: center;
     font-size: 100px;
     display: block;
@@ -77,21 +80,23 @@ body {
 
 .intro {
     text-align: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 
 .homeContainer{
-    padding: 5px;
+    background-color: #4CAF50;
+    /* padding: 5px; */
 }
 
 .homeContainer2{
+    background-color: #555;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*grid-template-columns: auto auto auto;*/
     max-width: 100%;
-    padding: 20px;
+    height: 85vh;
+    /* padding: 20px; */
 }
 
 .homeContainer2 a{
