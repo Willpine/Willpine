@@ -14,8 +14,8 @@ html {
 }
 
 .images {
-    height: 950px;
-    max-height: 950px;
+    height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
     width: auto;background-image: url("drawings/Happy\ new\ year.png");
     
@@ -45,7 +45,7 @@ html {
     width: auto;
     height: auto;
     max-width: 600px;
-    max-height: 800px;
+    max-height: 90vh;
     overflow-x:hidden;
 }
 

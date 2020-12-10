@@ -67,7 +67,7 @@ body {
 }
 
 .titleName {
-    padding-top: 30px;
+    padding-top: 20px;
     text-align: center;
     font-size: 100px;
     display: block;
@@ -77,12 +77,12 @@ body {
 
 .intro {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 
 .homeContainer{
-    padding: 10px;
+    padding: 5px;
 }
 
 .homeContainer2{
@@ -91,7 +91,7 @@ body {
     justify-content: center;
     /*grid-template-columns: auto auto auto;*/
     max-width: 100%;
-    padding: 30px;
+    padding: 20px;
 }
 
 .homeContainer2 a{
@@ -108,8 +108,8 @@ body {
 
 .child1,.child2,.child3{
     position: relative;
-    height:650px;
-    max-width: 550px;
+    height:65vh;
+    max-width: 400px;
     background-size: 100%;
     transition: 0.6s;background-size: 100%;
     background-repeat: no-repeat;
