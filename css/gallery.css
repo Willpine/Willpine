@@ -1,0 +1,23 @@
+section::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  section::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  section::-webkit-scrollbar-thumb {
+    opacity: 0.5;
+    background-color: rgba(0, 0, 255, 0.172);    /* color of the scroll thumb */
+  }
+
+#gallery_section img{
+    height: 200px;
+    width: 200px;
+    padding: 3px;
+}
+
+#gallery_section img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}

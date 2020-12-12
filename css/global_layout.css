@@ -1,0 +1,99 @@
+@font-face{
+    font-family: amagro;
+    src: url(/resources/fonts/webfontkit-20201212-154923/amagro-bold-webfont.woff);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(71, 61, 139, 0.316);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    opacity: 0.5;
+    background-color: rgba(0, 0, 255, 0.172);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 9vh;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+h1{
+    font-family: amagro;
+}
+
+header a,p{
+    text-decoration: none;
+    font-family: amagro;
+    font-size: larger;
+    color: black;
+}
+
+header a:hover{
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+main{
+    background-color: brown;
+}
+
+.global_grid{
+    display: grid;
+    background-color: indigo;
+    grid-template-rows: 91vh 91vh 91vh;
+    grid-template-columns: 1fr;
+}
+
+#gallery_section{
+    padding-top: 9vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    height: 100%;
+    overflow-y: scroll;
+    justify-content: center;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+#entries_section{
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    height: 100%;
+}
+
+#about_section{
+    background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+    height: 100%;
+}
+
+footer{
+    background-color: crimson;
+}
