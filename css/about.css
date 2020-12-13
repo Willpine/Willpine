@@ -7,13 +7,14 @@
     height: 100%;
     max-width: 1000px;
     overflow-y: scroll;
+    padding: 20px;
 }
 
 .about_div img{
     display: block;
     border-radius: 50%;
     padding-bottom: 20px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     margin-left: auto;
     margin-right: auto;
     height: auto;
