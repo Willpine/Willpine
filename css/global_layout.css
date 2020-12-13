@@ -70,7 +70,6 @@ main{
 }
 
 #gallery_section{
-    padding-top: 9vh;
     display: flex;
     flex-wrap: wrap;
     background-color: #4158D0;
@@ -79,6 +78,7 @@ main{
     overflow-y: scroll;
     justify-content: center;
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    padding-top: 9vh;
 }
 
 #entries_section{
@@ -91,15 +91,7 @@ main{
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     height: 100%;
-}
-
-.about_div{
-    background-color: rgb(204, 189, 172);
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    width: 80vw;
-    max-width: 1000px;
+    padding-top: 9vh;
 }
 
 footer{
