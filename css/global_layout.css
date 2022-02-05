@@ -3,6 +3,8 @@
     src: url(/resources/fonts/webfontkit-20201212-154923/amagro-bold-webfont.woff);
 }
 
+@import url(//db.onlinewebfonts.com/c/f88cd11de6d9aa48ddc14cf6181b309c?family=Nasalization);
+
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
 }
@@ -33,18 +35,40 @@ header{
     padding-left: 50px;
     padding-right: 50px;
     align-items: center;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: black;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
 }
 
 h1{
-    font-family: amagro;
+    margin-top: 1em;
+    font-family: Nasalization;
+    font-size: 100%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-size: 12em;
+    font-weight: 700;
+    color: #ffd5d8ff;
+    text-shadow: 1px 1px 1px #ff2e62ff,
+        1px 2px 1px #ff2e62ff,
+        1px 3px 1px #ff2e62ff,
+        1px 4px 1px #ff2e62ff,
+        1px 5px 1px #ff2e62ff,
+        1px 6px 1px #7a1f78ff,
+        1px 7px 1px #7a1f78ff,
+        1px 8px 1px #7a1f78ff,
+        1px 9px 1px #7a1f78ff,
+        1px 10px 1px #7a1f78ff,
+    1px 18px 6px rgba(16,16,16,0.0),
+    1px 22px 10px rgba(16,16,16,0.0),
+    1px 25px 35px rgba(16,16,16,0.0),
+    1px 30px 60px rgba(16,16,16,0.0);
 }
 
-header a,p{
+header a, header p{
     text-decoration: none;
-    font-family: amagro;
+    font-family: Heebo-ExtraBold;
     font-size: larger;
-    color: black;
+    color: white;
 }
 
 header a:hover{
@@ -58,27 +82,11 @@ nav{
     width: 50%;
 }
 
-main{
-    background-color: brown;
-}
-
 .global_grid{
     display: grid;
     background-color: indigo;
     grid-template-rows: 91vh 91vh 91vh;
     grid-template-columns: 1fr;
-}
-
-#gallery_section{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    height: 100%;
-    overflow-y: scroll;
-    justify-content: center;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    padding-top: 9vh;
 }
 
 #entries_section{

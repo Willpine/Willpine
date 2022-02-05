@@ -7,17 +7,126 @@ section::-webkit-scrollbar {
   }
   
   section::-webkit-scrollbar-thumb {
-    opacity: 0.5;
-    background-color: rgba(0, 0, 255, 0.172);    /* color of the scroll thumb */
+    opacity: 0.5;   /* color of the scroll thumb */
   }
 
-#gallery_section img{
-    height: 200px;
-    width: 200px;
-    padding: 3px;
-}
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:rgb(39, 39, 44);
+    /* padding: 20px; */
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  main {
+    padding-top: 9vh;
+  }
 
-#gallery_section img:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
-}
+  .galleryContent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 50%;
+    
+    background-color: rgb(90, 69, 55) !important;
+  }
+
+  .row {
+    margin: 8px -16px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+
+  .row a {
+    text-decoration: none;
+  }
+
+  .row img{
+    width: 100%;
+    height: 100%;
+    grid-row: 1 / 3;
+  }
+
+  .row h4{
+    margin: auto;
+    font-size: 1.5vw;
+    font-family: amagro;
+    color: floralwhite;
+  }
+
+  .row p{
+    padding: 10px;
+    font-family: amagro;
+    font-size: 1vw;
+    color: #ddd;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    /*display: none; /* Hide columns by default */
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .galleryContent {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+  .galleryBtnContainer {
+    margin-top: 20px;
+  }
+  
+  /* Style the buttons */
+  .galleryBtn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .galleryBtn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background color to the active button */
+  .galleryBtn.active {
+    background-color: #666;
+     color: white;
+  }
+
+  @media screen and (max-width: 500px) {
+    .row{ grid-template-columns: auto; }
+  }
