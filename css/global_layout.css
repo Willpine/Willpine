@@ -9,13 +9,12 @@ body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
 }
   
-body::-webkit-scrollbar-track {
-    background: rgba(71, 61, 139, 0.316);        /* color of the tracking area */
+body::-webkit-scrollbar-track {     /* color of the tracking area */
 }
   
 body::-webkit-scrollbar-thumb {
     opacity: 0.5;
-    background-color: rgba(0, 0, 255, 0.172);    /* color of the scroll thumb */
+    background-color: rgba(211, 223, 235, 0.788);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
 }
 *{
@@ -26,10 +25,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 header{
+    z-index: 1;
+    background-color:black;
     display: flex;
     position: fixed;
     width: 100%;
-    height: 9vh;
+    height: 3vh;
     justify-content: space-between;
     margin: auto;
     padding-left: 50px;
@@ -42,10 +43,10 @@ header{
 h1{
     margin-top: 1em;
     font-family: Nasalization;
-    font-size: 100%;
-    transform: translate(50%,-50%);
-    text-transform: uppercase;
-    font-size: 12em;
+    /* font-size: 100%; */
+    text-align: center;
+    /* transform: translate(50%,-50%); */
+    font-size: 12vw;
     font-weight: 700;
     color: #ffd5d8ff;
     text-shadow: 1px 1px 1px #ff2e62ff,
@@ -77,37 +78,12 @@ header a:hover{
 }
 
 nav{
+    background-color: black;
     display: flex;
     justify-content: space-evenly;
     width: 50%;
 }
 
-.global_grid{
-    display: grid;
-    background-color: indigo;
-    grid-template-rows: 91vh 91vh 91vh;
-    grid-template-columns: 1fr;
-}
-
-#entries_section{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-    height: 100%;
-    overflow-y: scroll;
-    justify-content: space-evenly;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    padding-top: 14vh;
-    padding-bottom: 5vh;
-}
-
-#about_section{
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-    height: 100%;
-    padding-top: 9vh;
-}
 
 footer{
     background-color: crimson;
