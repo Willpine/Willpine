@@ -9,14 +9,12 @@ body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
 }
   
-body::-webkit-scrollbar-track {     /* color of the tracking area */
-}
-  
 body::-webkit-scrollbar-thumb {
     opacity: 0.5;
     background-color: rgba(211, 223, 235, 0.788);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -24,66 +22,10 @@ body::-webkit-scrollbar-thumb {
     scroll-behavior: smooth;
 }
 
-header{
-    z-index: 1;
-    background-color:black;
-    display: flex;
-    position: fixed;
+#willpineLogo {
     width: 100%;
-    height: 3vh;
-    justify-content: space-between;
-    margin: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    align-items: center;
-    background-color: black;
-    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    height: auto;
 }
-
-h1{
-    margin-top: 1em;
-    font-family: Nasalization;
-    /* font-size: 100%; */
-    text-align: center;
-    /* transform: translate(50%,-50%); */
-    font-size: 12vw;
-    font-weight: 700;
-    color: #ffd5d8ff;
-    text-shadow: 1px 1px 1px #ff2e62ff,
-        1px 2px 1px #ff2e62ff,
-        1px 3px 1px #ff2e62ff,
-        1px 4px 1px #ff2e62ff,
-        1px 5px 1px #ff2e62ff,
-        1px 6px 1px #7a1f78ff,
-        1px 7px 1px #7a1f78ff,
-        1px 8px 1px #7a1f78ff,
-        1px 9px 1px #7a1f78ff,
-        1px 10px 1px #7a1f78ff,
-    1px 18px 6px rgba(16,16,16,0.0),
-    1px 22px 10px rgba(16,16,16,0.0),
-    1px 25px 35px rgba(16,16,16,0.0),
-    1px 30px 60px rgba(16,16,16,0.0);
-}
-
-header a, header p{
-    text-decoration: none;
-    font-family: Heebo-ExtraBold;
-    font-size: larger;
-    color: white;
-}
-
-header a:hover{
-    transition: 0.2s;
-    transform: scale(1.2);
-}
-
-nav{
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-}
-
 
 footer{
     background-color: crimson;
