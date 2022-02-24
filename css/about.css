@@ -1,48 +1,5 @@
-.about_div{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(204, 189, 172);
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    max-width: 1000px;
-    overflow-y: scroll;
-    padding: 20px;
-}
-
-.about_div img{
-    display: block;
-    border-radius: 50%;
-    padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 100%;
-    max-width: 200px;
-}
-
-.about_div h2{
-    text-align: center;
-    font-size: larger;
-    font-family: amagro;
-}
-
-.about_div h3{
-    padding: 20px;
-    font-size: larger;
-    font-family: amagro;
-}
-
-.about_div p{
-    padding: 20px;
-    text-align: justify;
-    font-size: medium;
-    font-family: amagro;
-}
-
-.about_div li{
-    padding-left: 40px;
-    text-align: justify;
-    font-size: medium;
-    font-family: amagro;
+section div#aboutContainer {
+    height: 200px;
+    width: 200px;
+    background-color: azure;
 }

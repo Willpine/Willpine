@@ -4,15 +4,12 @@
 }
 
 @import url(//db.onlinewebfonts.com/c/f88cd11de6d9aa48ddc14cf6181b309c?family=Nasalization);
-
-body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-}
   
 body::-webkit-scrollbar-thumb {
     opacity: 0.5;
     background-color: rgba(211, 223, 235, 0.788);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
+    width: 12px;
 }
 
 *{
