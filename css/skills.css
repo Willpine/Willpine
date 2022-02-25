@@ -1,0 +1,24 @@
+section div#skillsContainer {
+    height: 100%;
+    width: auto;
+    background-color: rgb(247, 238, 238);
+}
+
+/* Container for skill bars */
+.skillContainer {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skill {
+  text-align: right; /* Right-align text */
+  padding-top: 1px; /* Add top padding */
+  padding-bottom: 1px; /* Add bottom padding */
+  color: white; /* White text color */
+  text-align: center;
+}
+
+.java {width: 75%; background-color: #000000;}
+.javascript {width: 70%; background-color: #000000;}
+.csharp {width: 30%; background-color: #000000;}
+.sql {width: 30%; background-color: #000000;}

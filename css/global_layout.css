@@ -17,6 +17,11 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+    background-color: black;
 }
 
 #willpineLogo {
@@ -24,6 +29,13 @@ body::-webkit-scrollbar-thumb {
     height: auto;
 }
 
+.textContainer {
+    padding: 10px;
+}
+
 footer{
     background-color: crimson;
+    color: aliceblue;
+    width: 100%;
+    height: auto;
 }
