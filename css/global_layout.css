@@ -3,8 +3,15 @@
     src: url(/resources/fonts/webfontkit-20201212-154923/amagro-bold-webfont.woff);
 }
 
-@import url(//db.onlinewebfonts.com/c/f88cd11de6d9aa48ddc14cf6181b309c?family=Nasalization);
-  
+@font-face {
+    font-family: 'blocpartyregular';
+    src: url('/resources/fonts/blocParty/blocpartyregular-0wgep-webfont.woff2') format('woff2'),
+         url('/resources/fonts/blocParty/blocpartyregular-0wgep-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body::-webkit-scrollbar-thumb {
     opacity: 0.5;
     background-color: rgba(211, 223, 235, 0.788);    /* color of the scroll thumb */

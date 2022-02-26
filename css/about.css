@@ -1,3 +1,4 @@
+
 section div#aboutContainer {
     height: 120%;
     width: auto;
@@ -5,8 +6,22 @@ section div#aboutContainer {
     margin: 0;
 }
 
-section div#aboutContainer div.textContainer{
-    background-color: brown;
+div#aboutContainer .titleContainer {
+    font-size: 100px;
+    font-family: blocpartyregular;
+    padding-top: 100px;
+    padding-left: 2rem;
+}
+
+div#aboutContainer .separationBar {
+    background-color: black;
+    height: 5px;
+    width: 98%;
     margin: 0 auto;
-    width: 100%;
+}
+
+.name{
+}
+
+section div#aboutContainer div.textContainer{
 }
