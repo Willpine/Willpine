@@ -36,6 +36,20 @@ html{
     height: auto;
 }
 
+.titleContainer {
+    font-size: 100px;
+    font-family: blocpartyregular;
+    padding-top: 100px;
+    padding-left: 2rem;
+}
+
+.separationBar {
+    background-color: black;
+    height: 5px;
+    width: 98%;
+    margin: 0 auto;
+}
+
 .textContainer {
     padding: 10px;
 }
