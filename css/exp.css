@@ -5,3 +5,7 @@ section#exp {
     background-color: azure;
     margin: 0;
 }
+
+.expContainer {
+  display: flexbox;
+}
