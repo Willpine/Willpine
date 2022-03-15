@@ -8,3 +8,8 @@ html, css and js.
 
 Make it single Page.
 Sort gallery by Date asc and desc.
+
+## Themes
+
+Maybe something space-related.
+Newspaper aesthetic sounds nice too.
