@@ -55,8 +55,13 @@ html{
 }
 
 footer{
-    background-color: crimson;
+    background-color: rgb(136, 129, 130);
     color: aliceblue;
     width: 100%;
     height: auto;
+    padding: 20px;
+}
+
+footer *{
+    text-align: center;
 }
