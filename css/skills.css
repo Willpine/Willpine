@@ -1,5 +1,9 @@
 section#skills {
     height: 120%;
+}
+
+section div#skillsContainer {
+    height: 130%;
     width: auto;
 }
 
@@ -35,12 +39,28 @@ div#skillsContainer .textContainer p {
   background-color: #ddd; /* Grey background */
 }
 
+div#skillsContainer .titleContainer {
+  font-size: 100px;
+  font-family: blocpartyregular;
+  padding-top: 100px;
+  padding-left: 2rem;
+  color: white;
+}
+
+div#skillsContainer .separationBar {
+  background-color: black;
+  height: 5px;
+  width: 98%;
+  margin: 0 auto;
+}
+
 .skill {
   text-align: right; /* Right-align text */
   padding-top: 1px; /* Add top padding */
   padding-bottom: 1px; /* Add bottom padding */
   color: white; /* White text color */
   text-align: center;
+  font-size: small;
 }
 
 .java {width: 75%; background-color: #000000;}
