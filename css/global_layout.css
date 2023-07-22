@@ -9,14 +9,29 @@
          url('/resources/fonts/blocParty/blocpartyregular-0wgep-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
-body::-webkit-scrollbar-thumb {
-    opacity: 0.5;
-    background-color: rgba(211, 223, 235, 0.788);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    width: 12px;
+@font-face {
+    font-family: 'dosis';
+    src: url('/resources/fonts/dosis/Dosis-VariableFont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'varelaRound';
+    src: url('/resources/fonts/varelaRound/VarelaRound-Regular.woff2') format('woff2'),
+         url('/resources/fonts/varelaRound/VarelaRound-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'zillaSlab';
+    src: url('/resources/fonts/zillaSlab/ZillaSlab-Regular.woff2') format('woff2'),
+         url('/resources/fonts/zillaSlab/ZillaSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 *{
@@ -24,11 +39,11 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'zillaSlab';
 }
 
 html{
-    background-color: black;
+    background-color: rgb(31, 30, 30);
 }
 
 #willpineLogo {
@@ -37,21 +52,30 @@ html{
 }
 
 .titleContainer {
-    font-size: 100px;
-    font-family: blocpartyregular;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
     padding-top: 100px;
     padding-left: 2rem;
+    color: white;
 }
 
 .separationBar {
-    background-color: black;
-    height: 5px;
-    width: 98%;
-    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    /* height: 5px;
+    width: 8rem; */
+    margin-left: 2rem;
 }
 
 .textContainer {
-    padding: 10px;
+    margin: 0 auto;
+    padding: 1.6rem;
+    color:white;
+    background-color: rgb(37, 36, 39);
+    width: 23.0em;
+    border-radius: 3%;   
+    font-size: 1.2em;
+    letter-spacing: 2;
 }
 
 footer{
