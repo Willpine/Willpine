@@ -6,8 +6,9 @@ html, css and js.
 
 ## Future Features
 
-Make it single Page.
-Sort gallery by Date asc and desc.
+[ ] Make a sick scroll-down animation
+
+[ ] Add images to represent each section
 
 ## Themes
 
