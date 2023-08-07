@@ -10,6 +10,8 @@ html, css and js.
 
 [ ] Add images to represent each section
 
+[ ] Improve the content
+
 ## Themes
 
 Maybe something space-related.
