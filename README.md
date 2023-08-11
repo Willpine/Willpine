@@ -16,3 +16,9 @@ html, css and js.
 
 Maybe something space-related.
 Newspaper aesthetic sounds nice too.
+
+3C2F2F
+854442
+DFCCAF
+6F4436
+BE9B7B
