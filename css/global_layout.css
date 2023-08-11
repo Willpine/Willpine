@@ -13,13 +13,15 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'zillaSlab';
     src: url('/resources/fonts/zillaSlab/ZillaSlab-Regular.woff2') format('woff2'),
          url('/resources/fonts/zillaSlab/ZillaSlab-Regular.woff') format('woff');
-    font-weight: normal;
+    font-weight: bolder;
     font-style: normal;
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap');
 
 @font-face {
     font-family: 'lora';
@@ -72,9 +74,10 @@ html{
     margin-bottom: 1rem;
     text-align: left;
     margin-left: 2rem;
-    font-family: 'zillaSlab';
-    font-size: 2rem;
-    font-weight: 900;
+    font-family: 'Zilla Slab', serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 1;
     color: white;
 }
 
@@ -85,8 +88,8 @@ html{
 
 .subTitle{
   /* color: red; */
-  font-family: 'zillaSlab';
-  font-weight: 900;
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
   font-size: 1.4em;
 }
 
