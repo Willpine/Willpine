@@ -100,4 +100,11 @@ footer{
 
 footer *{
     text-align: center;
+    font-family: varelaRound;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+footer a:visited{
+  color: aliceblue;
 }

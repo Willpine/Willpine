@@ -6,11 +6,17 @@ html, css and js.
 
 ## Future Features
 
-[ ] Make a sick scroll-down animation
+[ ] Include 3d floating head
+
+[ ] Sick scroll-down animation
 
 [ ] Add images to represent each section
 
 [ ] Improve the content
+
+[ ] Interchangeable language
+
+[ ] Website intro
 
 ## Themes
 
