@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/global_layout.css">
+
+    <title>Gallery</title>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="galleryBtnContainer">
+            <button class="galleryBtn active" onclick="filterSelection('all')">Show All</button>
+            <button class="galleryBtn" onclick="filterSelection('finished')">Finished Pieces</button>
+            <button class="galleryBtn" onclick="filterSelection('sketches')">Sketches</button>
+        </div>
+
+        <div class="row">
+            <div class="column finished">
+                <a href="resources/art/World 1.png" data-title="World 1">
+                    <div class="galleryContent">
+                        <img src="resources/art/World 1Thumb.png">
+                        <h4>World 1</h4>
+                        <p>A traveler at the beginning of his journey</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column finished">
+                <a href="resources/art/Under Presure.png" data-title="Under Presure">
+                    <div class="galleryContent">
+                        <img src="resources/art/Under Presure.png">
+                        <h4>Under Pressure</h4>
+                        <p>Psychological Gravity</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Anao Siegheart Willian.png" data-title="Battle Dwarf">
+                    <div class="galleryContent">
+                        <img src="resources/art/Anao Siegheart WillianThumb.png">
+                        <h4>Battle Dwarf</h4>
+                        <p>Ready for another rumble?</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/duende vere.png" data-title="Green Guy">
+                    <div class="galleryContent">
+                        <img src="resources/art/duende verethumb.png">
+                        <h4>Green Guy</h4>
+                        <p>Rooftop running at night</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Terra06.png" data-title="Dreams of An Absolution">
+                    <div class="galleryContent">
+                        <img src="resources/art/Terra06Thumb.png">
+                        <h4>Dreams of an Absolution</h4>
+                        <p>Princess</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/nexttoeachotherright.png" data-title="Way out there">
+                    <div class="galleryContent">
+                        <img src="resources/art/nexttoeachotherrightThumb.png">
+                        <h4>Gospel</h4>
+                        <p>Nonsense at it's finest</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column lineart">
+                <a href="resources/art/Gaby.png" data-title="Veigirl">
+                    <div class="galleryContent">
+                        <img src="resources/art/Gabythumb.png">
+                        <h4>Veigirl</h4>
+                        <p>Description above</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/PiriPaque.png" data-title="Blynder">
+                    <div class="galleryContent">
+                        <img src="resources/art/PiriPaqueThumb.png">
+                        <h4>Blynder</h4>
+                        <p>Casually formal</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Heir.png" data-title="Heir">
+                    <div class="galleryContent">
+                        <img src="resources/art/HeirThumb.png">
+                        <h4>Heir</h4>
+                        <p>Noble lad</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Just Luke.png" data-title="Luke">
+                    <div class="galleryContent">
+                        <img src="resources/art/Just LukeThumb.png">
+                        <h4>Luke</h4>
+                        <p>Luke skywalker with some modern clothing</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/anna falling finished3.png" data-title="Alice Diving"">
+                    <div class="galleryContent">
+                        <img src="resources/art/anna falling finished3Thumb.png">
+                        <h4>Alice Diving</h4>
+                        <p>Early concept of how it feels to enter the liminal</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Agony.png" data-title="Agony">
+                    <div class="galleryContent">
+                        <img src="resources/art/AgonyThumb.png">
+                        <h4>Agony</h4>
+                        <p>Endless Uncertainty</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Agony.png" data-title="Agony">
+                    <div class="galleryContent">
+                        <img src="resources/art/AgonyThumb.png">
+                        <h4>Agony</h4>
+                        <p>Endless Uncertainty</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/BattlePosition.png" data-title="Battle Position">
+                    <div class="galleryContent">
+                        <img src="resources/art/BattlePositionThumb.png">
+                        <h4>Anatomy Study</h4>
+                        <p>My drawing process</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="column finished">
+                <a href="resources/art/Happy new year.png" data-title="Happy new year">
+                    <div class="galleryContent">
+                        <img src="resources/art/Happy new yearThumb.png">
+                        <h4>Patronums</h4>
+                        <p>Featuring materialized patronum</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Ocean Eyes.png" data-title="Ocean Eyes">
+                    <div class="galleryContent">
+                        <img src="resources/art/Ocean EyesThumb.png">
+                        <h4>Ocean eyes</h4>
+                        <p>Dead eyes</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Samurai.png" data-title="Samurai">
+                    <div class="galleryContent">
+                        <img src="resources/art/SamuraiThumb.png">
+                        <h4>Oni</h4>
+                        <p></p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Smile like you mean it.png" data-title="Smile like you mean it">
+                    <div class="galleryContent">
+                        <img src="resources/art/Smile like you mean itThumb.png">
+                        <h4>Smile Like you Mean It</h4>
+                        <p>One that only smiles truthfully</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="column finished">
+                <a href="resources/art/Stranded Jeremy.png" data-title="Stranded Jeremy">
+                    <div class="galleryContent">
+                        <img src="resources/art/Stranded JeremyThumb.png">
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="column finished">
+                <a href="resources/art/Anna Sleeping.png" data-title="Anna Awakens">
+                    <div class="galleryContent">
+                        <img src="resources/art/Anna SleepingThumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Anna.png" data-title="Anna">
+                    <div class="galleryContent">
+                        <img src="resources/art/AnnaThumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Auto Pilot.png" data-title="Auto Pilot">
+                    <div class="galleryContent">
+                        <img src="resources/art/Auto PilotThumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Transplarent.png" data-title="Transplarent">
+                    <div class="galleryContent">
+                        <img src="resources/art/TransplarentThumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/White_Runner.png" data-title="White_Runner">
+                    <div class="galleryContent">
+                        <img src="resources/art/White_RunnerThumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/GFace.png" data-title="GFace">
+                    <div class="galleryContent">
+                        <img src="resources/art/GFaceThumb.png">
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="column finished">
+                <a href="resources/art/BokunoWallpaper.png" data-title="BokunoWallpaper">
+                    <div class="galleryContent">
+                        <img src="resources/art/BokunoWallpaperThumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <div class="galleryContent">
+                    <a href="resources/art/Buttons.png" data-title="Buttons">
+                        <img src="resources/art/ButtonsThumb.png">
+                </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Dropping rose.png" data-title="Dropping rose">
+                    <div class="galleryContent">
+                        <img src="resources/art/Dropping roseThumb.png">
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="column finished">
+                <a href="resources/art/Jetpack.png" data-title=Jetpack">
+                    <div class="galleryContent">
+                        <img src="resources/art/JetpackThumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Sora.png" data-title="Sora">
+                    <div class="galleryContent">
+                        <img src="resources/art/SoraThumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Hers01.png" data-title="Hers01">
+                    <div class="galleryContent">
+                        <img src="resources/art/Hers01Thumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Cyberpunk revolution.png" data-title="Cyberpunk revolution">
+                    <div class="galleryContent">
+                        <img src="resources/art/Cyberpunk revolutionThumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Wiu.png" data-title="Wiu">
+                    <div class="galleryContent">
+                        <img src="resources/art/WiuThumb.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="column finished">
+                <a href="resources/art/Lollita.png" data-title="Aria">
+                    <div class="galleryContent">
+                        <img src="resources/art/LollitaThumb.png">
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
