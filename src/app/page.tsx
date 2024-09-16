@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+
+import "../css/app/app.css";
 
 export default function Home() {
   return (
@@ -7,8 +8,6 @@ export default function Home() {
       <main>
         <section id="front">
           <div className="sectionContainer">
-            <button className="bg-black p-2 m-2">
-            </button>
             <div className="titleContainer">Willian Yuiti</div>
             <div className="textContainer">
               <p>
