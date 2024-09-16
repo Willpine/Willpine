@@ -39,7 +39,6 @@ export async function getSortedPostData() {
 }
 
 export async function getPostData(id: string) {
-  const fileNames = fs.readdirSync(postsDirectory);
 
   // Read markdown file as String
   const fullPath = path.join(postsDirectory, id);
