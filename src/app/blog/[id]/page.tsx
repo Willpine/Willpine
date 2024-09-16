@@ -8,7 +8,7 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
       <section>
         <h1 className=''>{allPostData.data.title}</h1>
         <h2 className=''>{allPostData.data.date}</h2>
-        <Markdown className=''>{allPostData.content}</Markdown>
+        <Markdown className='textContainer'>{allPostData.content}</Markdown>
         <p className=''>
         </p>
       </section>

@@ -33,25 +33,37 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
       <body
         className={
           `${geistSans.variable} 
            ${geistMono.variable}
            antialiased
-           layoutContainer
+           h-full
           `
         }
       >
-        <div className="bg-black h-8 grid grid-cols-2">
-          <Link href={"/"} className="text-white">
-            Dev_Will Portfolio
-          </Link>
-          <Link href="/blog" className="text-white">
-            Blog (Under Construction🏗️)
-          </Link>
-        </div>
+        <div className="layoutContainer">
+          <div className="navContainer">
+            <div className="navItem">
+              <Link href={"/"} className="">
+                Dev_Will Portfolio
+              </Link>
+            </div>
+            <div className="navItem">
+              <Link href="/blog" className="">
+                Blog (Under Construction🏗️)
+              </Link>
+            </div>
+          </div>
 
-        {children}
+          {children}
+        </div>
+        <footer>
+          <a href="https://br.linkedin.com/in/willian-yuiti-21138014b">LinkedIn</a>
+          <a href="https://github.com/Willpine/Willpine">Github</a>
+          <p>Yuiti Tecnologia Eirelli 2023</p>
+        </footer>
       </body>
     </html>
   );

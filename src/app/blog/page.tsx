@@ -8,15 +8,18 @@ export default async function Blog() {
   return (
     <div>
       <section>
-        <h2 className=''>Blog</h2>
+        <h1 className='titleContainer mt-4 mb-4'>Yuiti's Blog</h1>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
               <li key={id} className=''>
-              <Link href={`/blog/${id}`}>
-                {title}
-                <br />
-                {date}
-              </Link>
+
+                <div className='textContainer mt-2 mb-2'>
+                  <Link href={`/blog/${id}`}>
+                    <h3>{title}</h3>
+                    {date}
+                  </Link>
+                </div>
+
               </li>
           ))}
         </ul>
