@@ -34,7 +34,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased layoutContainer`}
+        className={
+          `${geistSans.variable} 
+           ${geistMono.variable}
+           antialiased
+           layoutContainer
+          `
+        }
       >
         <div className="bg-black h-8 grid grid-cols-2">
           <Link href={"/"} className="text-white">

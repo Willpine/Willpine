@@ -1,0 +1,58 @@
+.layoutContainer img{
+  margin: 0 auto;
+  width: 10rem;
+}
+
+.layoutContainer{
+    width: 100%;
+    max-width: 32rem;
+    margin: 0 auto;
+    background-color: transparent;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+    text-align: center;
+}
+
+
+.titleContainer {
+  /* background-color: darkblue; */
+    margin-bottom: 0.2rem;
+    text-align: left;
+    margin-left: 1rem;
+    font-family: 'Zilla Slab', serif;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 1;
+    color: black;
+}
+
+.separationBar {
+    background-color: rgb(255, 255, 255);
+    margin-left: 2rem;
+}
+
+.subTitle{
+  /* color: red; */
+  font-family: 'Zilla Slab', serif;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 6rem;
+}
+
+footer *{
+    text-align: center;
+    font-family: varelaRound;
+    text-decoration: none;
+}
+
+footer a:visited{
+  color: aliceblue;
+}

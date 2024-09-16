@@ -4,8 +4,10 @@ import "../css/app/app.css";
 
 export default function Home() {
   return (
+
     <div>
       <main>
+
         <section id="front">
           <div className="sectionContainer">
             <div className="titleContainer">Willian Yuiti</div>
@@ -15,6 +17,9 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+
+
           <div className="splashContainer">
             <Image
               width={516}
@@ -43,6 +48,9 @@ export default function Home() {
             alt="carreer"
           />
         </div>
+
+
+
         <section id="about">
           <div className="sectionContainer">
             <div className="titleContainer">Sobre</div>
@@ -71,6 +79,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+
+
         <div className="splashContainer grid grid-cols-3 gap-3" >
           <Image
             width={550}
@@ -94,6 +105,9 @@ export default function Home() {
             alt="tux"
           />
         </div>
+
+
+
         <section id="skills">
           <div className="sectionContainer">
             <div className="titleContainer">Ferramentas</div>
@@ -138,11 +152,16 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+
+
       </main>
+
       <footer>
         <a href="https://br.linkedin.com/in/willian-yuiti-21138014b">LinkedIn</a>
         <a href="https://github.com/Willpine/Willpine">Github</a>
         <p>Yuiti Tecnologia Eirelli 2023</p>
       </footer>
+
     </div>);
 }
