@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={
-      ` ${geistSans.variable} 
+        ` ${geistSans.variable} 
         ${geistMono.variable}
         antialiased
         h-full
@@ -43,15 +43,10 @@ export default function RootLayout({
 
         <div className="layoutContainer">
 
-          <div className="navContainer">
+          <div className="navTitle">
             <div className="navItem">
               <Link href={"/"} className="">
-                Dev_Will Portfolio
-              </Link>
-            </div>
-            <div className="navItem">
-              <Link href="/blog" className="">
-                Blog (Under Construction🏗️)
+                Dev_Will
               </Link>
             </div>
           </div>
