@@ -1,5 +1,6 @@
 import { getPostData, getSortedPostData } from '../../../utils/posts';
 import Markdown from 'react-markdown';
+import "../../../css/app/blog/blogpost/blogpost.css";
 
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
@@ -17,7 +18,7 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
     <div>
       <section>
         <h1 className=''>{allPostData.data.title}</h1>
-        <h2 className=''>{allPostData.data.date}</h2>
+        <h2 className='mb-10'>{allPostData.data.date}</h2>
         <Markdown className='textContainer'>{allPostData.content}</Markdown>
         <p className=''>
         </p>

@@ -1,6 +1,14 @@
 ---
-title: 'Second Blog'
-date: '2024-09-14'
+title: 'Como montei este site'
+date: '17/09/2024'
 ---
 
-The second blog.
+## Do HTML/CSS ao NextJS
+
+## Conceitos
+
+## Primeiro protótipo
+
+## Migração para NextJS
+
+## Publicação
