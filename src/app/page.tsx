@@ -28,10 +28,10 @@ export default function Home() {
           <div className="titleContainer">Carreira</div>
           <div className="textContainer">
             <h3>Cubo Connect / 2019 -&gt; 2021</h3>
-            <p>Dev Júnior - Desenvolvimento de APIs para Ambev e UNIMED</p>
+            <p>QA / Dev - Desenvolvimento de APIs para Ambev e UNIMED</p>
             <br />
             <h3>Connectmed Gama / 2022 -&gt; presente</h3>
-            <p>Dev Pleno - Equipe de melhorias e bugs emergenciais</p>
+            <p>Dev - Equipe de melhorias e bugs emergenciais</p>
           </div>
         </div>
       </section>
