@@ -56,9 +56,11 @@ export default function RootLayout({
         </div>
 
         <footer>
-          <a href="https://br.linkedin.com/in/willian-yuiti-21138014b">LinkedIn</a>
-          <a href="https://github.com/Willpine/Willpine">Github</a>
-          <p>Yuiti Tecnologia Eirelli 2023</p>
+          <span>
+            <a href="https://br.linkedin.com/in/willian-yuiti-21138014b">LinkedIn</a>
+            <a href="https://github.com/Willpine/Willpine">Github</a>
+            <p>Yuiti Tecnologia Eirelli 2023</p>
+          </span>
         </footer>
 
       </body>
